@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Code Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secret Code Converter</h1>
+        <label for="inputCode">Enter Code:</label>
+        <input type="text" id="inputCode">
+
+        <label for="category">Select Category:</label>
+        <select id="category">
+            <option value="F">Clothing</option>
+            <option value="G">Footwear</option>
+            <option value="M">Accessories</option>
+            <option value="S">Jewellery</option>
+            <option value="U">Cosmetics</option>
+            <option value="P">Kids Collection</option>
+        </select>
+
+        <label for="app">Select App:</label>
+        <select id="app">
+            <option value="QW">Markaz</option>
+            <option value="SN">Zariya</option>
+            <option value="BT">Daraz</option>
+            <option value="FV">Wasooq</option>
+            <option value="OZ">Raabta</option>
+        </select>
+
+        <button onclick="convertCode()">Convert to Secret</button>
+        <button onclick="convertBack()">Convert to English</button>
+
+        <h2>Converted Code: <span id="convertedCode"></span></h2>
+        <h2>Detected App: <span id="detectedApp"></span></h2>
+        <h2>Detected Category: <span id="detectedCategory"></span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
